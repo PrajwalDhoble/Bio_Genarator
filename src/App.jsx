@@ -10,9 +10,9 @@ function App() {
     
     <>
     <Header></Header>
-    <Routes>
+    {/* <Routes> */}
       {/* <Route path='/' element={<Options></Options>}></Route> */}
-    </Routes>
+    {/* </Routes> */}
     </>
   )
 }
