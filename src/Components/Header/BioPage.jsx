@@ -1,5 +1,5 @@
-import "./Header.css"
-function Header() {
+import "./BioPage.css"
+function BioPage() {
 
 
   return (
@@ -70,4 +70,4 @@ function Header() {
   )
 }
 
-export default Header
+export default BioPage

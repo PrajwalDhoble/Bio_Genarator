@@ -1,12 +1,13 @@
-import Header from './Components/Header/Header'
+
 import "./App.css"
+import BioPage from './Components/Header/BioPage'
 function App() {
 
 
   return (
     
     <>
-    <Header></Header>
+<BioPage></BioPage>
     </>
   )
 }
