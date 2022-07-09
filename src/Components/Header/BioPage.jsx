@@ -1,4 +1,4 @@
-import { useState , useEffect} from "react";
+import { useState, useEffect } from "react";
 import "./BioPage.css";
 import axios from "axios"
 function BioPage() {
@@ -28,19 +28,19 @@ function BioPage() {
 
   const translate = () => {
     // curl -X POST "https://libretranslate.de/translate" -H  "accept: application/json" -H  "Content-Type: application/x-www-form-urlencoded" -d "q=hello&source=en&target=es&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-   
+
     const params = new URLSearchParams();
     params.append('q', input);
     params.append('source', from);
     params.append('target', to);
     params.append('api_key', 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx');
 
-    axios.post('https://libretranslate.de/translate',params, {
+    axios.post('https://libretranslate.de/translate', params, {
       headers: {
         'accept': 'application/json',
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-    }).then(res=>{
+    }).then(res => {
       console.log(res.data)
       setOutput(res.data.translatedText)
     })
@@ -301,50 +301,49 @@ function BioPage() {
               {data.name} is from {data.location}.{(data.gender) == 'male' ? 'He' : 'She'} is studying {data.major} at {data.school}.{(data.gender) == 'male' ? 'He' : 'She'} currently works as a {data.occupation}.{(data.gender) == 'male' ? 'He' : 'She'} was raised {data.religious}.{(data.gender) == 'male' ? 'He' : 'She'} {data.reason}.
             </p>
           </div>
-          {/* </div> */}
           <br></br>
           <div>
-       <br></br>
-      </div>
+            <br></br>
+          </div>
         </div>
         <div>
-        <div>
-          <b>Copy and paste your bio here and translate in which language you want</b>
-          <br></br>
-        From ({from}) :
-        <select onChange={(e) => setFrom(e.target.value)}>
-          {options.map((opt) => (
-            <option key={opt.code} value={opt.code}>
-              {opt.name}
-            </option>
-          ))}
-        </select>
-        To ({to}) :
-        <select onChange={(e) => setTo(e.target.value)}>
-          {options.map((opt) => (
-            <option key={opt.code} value={opt.code}>
-              {opt.name}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div>
-        
-        <textarea
-          cols="50"
-          rows="8"
-          onInput={(e) => setInput(e.target.value)}
-        > </textarea>
-      </div>
-      <div>
-        <textarea cols="50" rows="8" value={output}></textarea>
-      </div>
-      <div>
-        <button onClick={e=>translate()}>Translate</button>
-      </div>
-      {/* </div> */}
+          <div>
+            <b>Copy and paste your bio here and translate in which language you want</b>
+            <br></br>
+            From ({from}) :
+            <select onChange={(e) => setFrom(e.target.value)}>
+              {options.map((opt) => (
+                <option key={opt.code} value={opt.code}>
+                  {opt.name}
+                </option>
+              ))}
+            </select>
+            To ({to}) :
+            <select onChange={(e) => setTo(e.target.value)}>
+              {options.map((opt) => (
+                <option key={opt.code} value={opt.code}>
+                  {opt.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+
+            <textarea
+              cols="50"
+              rows="8"
+              onInput={(e) => setInput(e.target.value)}
+            > </textarea>
+          </div>
+          <div>
+            <textarea cols="50" rows="8" value={output}></textarea>
+          </div>
+          <div>
+            <button onClick={e => translate()}>Translate</button>
+          </div>
+          {/* </div> */}
         </div>
-       </div>
+      </div>
 
     </>
 
