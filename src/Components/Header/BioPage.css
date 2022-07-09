@@ -1,4 +1,4 @@
- .head{
+.head{
     background-color: rgb(188,198,192);
     text-align: center;
     font-size: 33px;
@@ -11,9 +11,9 @@
 }
 
 .options{
-    margin-top: 30px;
+    /* margin-top: -22px; */
     margin-left: 250px;
-    width: 500px;
+    width: 520px;
     height: 50px;
     text-align: center;
     background-color:rgb(188,198,192);
@@ -45,4 +45,36 @@
     height:20px;
     width:100px;
     font-size: x-small;
+}
+
+#mainBox{
+    display: flex;
+}
+
+#mainBox > div {
+    flex: 1;
+    /* border: 1px solid black; */
+    background-color:rgb(228,238,233);
+}
+.result{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color:rgb(188,198,192);
+
+}
+
+.dataShow{
+    /* padding: 40px; */
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.resultBox{
+    background-color:rgb(188,198,192);
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+
 }
