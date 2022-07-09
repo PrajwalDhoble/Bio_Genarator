@@ -27,7 +27,6 @@ function BioPage() {
 
 
   const translate = () => {
-    // curl -X POST "https://libretranslate.de/translate" -H  "accept: application/json" -H  "Content-Type: application/x-www-form-urlencoded" -d "q=hello&source=en&target=es&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
     const params = new URLSearchParams();
     params.append('q', input);
@@ -57,7 +56,6 @@ function BioPage() {
       });
   }, []);
 
-  //  curl -X GET "https://libretranslate.de/languages" -H  "accept: application/json"
 
 
 
