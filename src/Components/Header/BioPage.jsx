@@ -24,20 +24,15 @@ function BioPage() {
 
 
   const handleInput = (e) => {
-    // console.log(e)
     const { id, value } = e.target;
-    // console.log(id, value)
 
     setdata({ ...data, [id]: value });
 
-    // console.log(data)
   };
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    // console.log(id, value)
     setdata({ ...data, [id]: value });
-    // console.log(data)
   };
 
 
@@ -264,7 +259,7 @@ function BioPage() {
 
           <div className="resultBox">
             <p className="dataShow">
-              {data.name} is from {data.location}. {(data.gender) == 'male' ? 'He' : 'She'} is studying {data.major} at {data.school} . {(data.gender) == 'male' ? 'He' : 'She'} currently works as a {data.occupation}. {(data.gender) == 'male' ? 'He' : 'She'} was raised {data.religious} . {(data.gender) == 'male' ? 'He' : 'She'} {data.reason} .
+              {data.name} is from {data.location}.{(data.gender) == 'male' ? 'He' : 'She'} is studying {data.major} at {data.school}.{(data.gender) == 'male' ? 'He' : 'She'} currently works as a {data.occupation}.{(data.gender) == 'male' ? 'He' : 'She'} was raised {data.religious}.{(data.gender) == 'male' ? 'He' : 'She'} {data.reason}.
             </p>
           </div>
         </div>
