@@ -1,75 +1,80 @@
-.head{
-    background-color: rgb(188,198,192);
+.head {
+    background-color: rgb(188, 198, 192);
     text-align: center;
     font-size: 33px;
     padding: 14px 14px;
 }
-.middle{
+
+.middle {
     margin-top: 0px;
-    background-color: rgb(228,238,233);
+    background-color: rgb(228, 238, 233);
     height: 1100px;
 }
 
-.options{
+.options {
     margin-left: 250px;
     width: 520px;
     height: 50px;
     text-align: center;
-    background-color:rgb(188,198,192);
+    background-color: rgb(188, 198, 192);
     margin-bottom: 30px;
 }
-.option{
+
+.option {
     margin-top: 30px;
     margin-left: 250px;
     width: 500px;
     height: 50px;
-    background-color:rgb(188,198,192);
+    background-color: rgb(188, 198, 192);
     margin-bottom: 30px;
     padding-top: 25px;
     padding-left: 20px;
     padding-bottom: 25px;
 }
-.roption{
+
+.roption {
     margin-top: 30px;
     margin-left: 250px;
     width: 500px;
     height: 150px;
-    background-color:rgb(188,198,192);
+    background-color: rgb(188, 198, 192);
     margin-bottom: 30px;
     padding-top: 25px;
     padding-left: 20px;
     padding-bottom: 25px;
 }
-.random{
-    height:20px;
-    width:100px;
+
+.random {
+    height: 20px;
+    width: 100px;
     font-size: x-small;
 }
 
-#mainBox{
+#mainBox {
     display: flex;
 }
 
-#mainBox > div {
+#mainBox>div {
     flex: 1;
-    background-color:rgb(228,238,233);
+    background-color: rgb(228, 238, 233);
 }
-.result{
+
+.result {
     text-align: center;
     width: 80%;
     margin: auto;
     margin-top: 30px;
-    background-color:rgb(188,198,192);
+    background-color: rgb(188, 198, 192);
 
 }
 
-.dataShow{
+.dataShow {
     font-weight: 500;
     font-size: 20px;
 }
 
-.resultBox{
-    background-color:rgb(188,198,192);
+.resultBox {
+    background-color: rgb(188, 198, 192);
     width: 80%;
     margin: auto;
     margin-top: 50px;
