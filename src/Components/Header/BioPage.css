@@ -11,7 +11,6 @@
 }
 
 .options{
-    /* margin-top: -22px; */
     margin-left: 250px;
     width: 520px;
     height: 50px;
@@ -53,7 +52,6 @@
 
 #mainBox > div {
     flex: 1;
-    /* border: 1px solid black; */
     background-color:rgb(228,238,233);
 }
 .result{
@@ -66,7 +64,6 @@
 }
 
 .dataShow{
-    /* padding: 40px; */
     font-weight: 500;
     font-size: 20px;
 }
